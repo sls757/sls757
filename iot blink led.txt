@@ -1,0 +1,49 @@
+Program1: Python program to blink LED
+
+import RPi.GPIO as GPIO
+
+# Import Raspberry Pi GPIO library
+
+import time
+
+# Import time module
+
+GPIO.setwarnings (False)
+
+# Ignore warning for now
+
+GPIO.setmode (GPIO.BCM)
+
+#assign numbering for the GPIO using BCM
+
+#GPIO.setmode (GPIO.BOARD)
+
+#assingn number for the GPIO using Board
+
+cnt = n
+
+Blink Time = 1
+
+RED LED = 14
+
+# change LED status every 1 seconds
+
+GPIO.setup(RED LED, GPIO.OUT)
+
+while True:
+
+if cnt == 0 :
+
+GPIO.output (RED LED, False)
+
+cnt = 1
+
+else:
+
+GPIO.output (RED_LED, True)
+
+ent = 0
+
+time.sleep (Blink Time)
+
+GPIO.cleanup()
